@@ -34,14 +34,9 @@ section div {
 
 section {
   text-align: justify!important;
-  text-justify: distribute-all-lines;
   font-size: 0!important;
 }
-section:after {
-  content: '';
-  display: inline-block;
-  width: 100%;
-}
+
 section > * {
   text-align: center;
   font-size: large;
@@ -51,12 +46,11 @@ section > div {
   vertical-align: top;
   display: inline-table;
   width: 100%;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 section > div.whole {
-  width: 0.5 vw;
-  margin-bottom: 1rem;
   background-color: white;
+  text-align: center;
 }
 section > div.half {
   width: calc((100% - 1vw) / 6);
@@ -64,7 +58,10 @@ section > div.half {
 }
 section > div.half  a {
   text-decoration: none;
+  border-bottom: 1vw solid white;
   color: cornflowerblue;
+  text-align: left;
+
 
       }
 
