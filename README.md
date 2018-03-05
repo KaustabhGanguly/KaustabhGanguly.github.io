@@ -17,6 +17,6 @@ What needs to be done next :
   ( only for professors) .
   
   
-The website is live at : kaustabhganguly.github.io
+The website is live at : https://kaustabhganguly.github.io
 
 Thank you Peter for being such an inspiration and guide .
