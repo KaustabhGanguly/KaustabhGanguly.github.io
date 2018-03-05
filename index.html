@@ -46,7 +46,8 @@ section > div {
   vertical-align: top;
   display: inline-table;
   width: 100%;
-  box-sizing: border-box;
+  box-sizing: content-box;
+  
 }
 section > div.whole {
   background-color: white;
@@ -54,7 +55,7 @@ section > div.whole {
 }
 section > div.half {
   width: calc((100% - 1vw) / 6);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 section > div.half  a {
   text-decoration: none;
@@ -72,10 +73,10 @@ body {
 }
 
 h1 {
-  font-size: 4vw ;
+  font-size: 5vw ;
   color: #4a5566;
   text-align: center;
-  margin: 0 0 1vw;
+  margin: 0 0 .8rem;
 }
 
 section {
