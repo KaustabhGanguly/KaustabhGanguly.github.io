@@ -9,6 +9,7 @@ Features :
 - Responsive , can be viewed on any phones , tabs , and computers . Fonts ,and Widths adjusts themselves.
 - Each Exercise has a navbar on the top which lists all the exercises and **highlights** the exercise you are currently on in the list . 
 - Fixed navbar for easy scrolling and changing pages .
+- Complete support of MathJax which is a javascript library that can turn any tex , malthml or other files into mathematical syntaxes .
 
 
 What needs to be done next :
