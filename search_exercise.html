@@ -24,7 +24,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+                              });
+    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
     
     
@@ -96,7 +102,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-preview">
             <h5><b>EXERCISES</b></h1>
-        <h1 id="3solvingproblemsbysearching">3. Solving Problems By Searching</h1>
+       <h1 id="3solvingproblemsbysearching">3. Solving Problems By Searching</h1>
 
 <p><strong>3.1</strong> Explain why problem formulation must follow goal formulation.</p>
 
@@ -111,11 +117,11 @@ want the banana.</p></li>
 
 <li><p>You start with the sequence ABABAECCEC, or in general any sequence
 made from A, B, C, and E. You can transform this sequence using the
-	following equalities: AC = E, AB = BC, BB = E, and E<i>x = x</i> for
-	any <i>x</i>. For example, ABBC can be transformed into AEC, and then AC,
+following equalities: AC = E, AB = BC, BB = E, and E$x$ = $x$ for
+any $x$. For example, ABBC can be transformed into AEC, and then AC,
 and then E. Your goal is to produce the sequence E.</p></li>
 
-<li><p>There is an n X n grid of squares, each square initially
+<li><p>There is an $n \times n$ grid of squares, each square initially
 being either unpainted floor or a bottomless pit. You start standing
 on an unpainted floor square, and can either paint the square under
 you or move onto an adjacent unpainted floor square. You want the
@@ -150,10 +156,10 @@ the real world, restricting actions and removing details. List three
 such simplifications we made.</p></li>
 </ol>
 
-<p><strong>3.4</strong> You have a 9 X 9 grid of squares, each of which can be colored
+<p><strong>3.4</strong> You have a $9 \times 9$ grid of squares, each of which can be colored
 red or blue. The grid is initially colored all blue, but you can change
 the color of any square any number of times. Imagining the grid divided
-into nine 3 X 3 sub-squares, you want each sub-square to be all
+into nine $3 \times 3$ sub-squares, you want each sub-square to be all
 one color but neighboring sub-squares to be different colors.</p>
 
 <ol>
@@ -180,8 +186,8 @@ solutions for problem (a)?</p></li>
 <p><strong>3.5</strong> [two-friends-exercise]Suppose two friends live in different cities on
 a map, such as the Romania map shown in . On every turn, we can
 simultaneously move each friend to a neighboring city on the map. The
-	amount of time needed to move from city <i>i</i> to neighbor <i>j</i> is equal to
-	the road distance <i>d(i,j)</i> between the cities, but on each turn the
+amount of time needed to move from city $i$ to neighbor $j$ is equal to
+the road distance $d(i,j)$ between the cities, but on each turn the
 friend that arrives first must wait until the other one arrives (and
 calls the first on his/her cell phone) before the next turn can begin.
 We want the two friends to meet as quickly as possible.</p>
@@ -190,9 +196,9 @@ We want the two friends to meet as quickly as possible.</p>
 <li><p>Write a detailed formulation for this search problem. (You will find
 it helpful to define some formal notation here.)</p></li>
 
-	<li><p>Let <i>D(i,j)</i> be the straight-line distance between cities <i>i</i> and
-		<i>j</i>. Which of the following heuristic functions are admissible? (i)
-		<i>D(i,j); (ii) 2 X D(i,j); (iii) D(i,j)/2</i>.</p></li>
+<li><p>Let $D(i,j)$ be the straight-line distance between cities $i$ and
+$j$. Which of the following heuristic functions are admissible? (i)
+$D(i,j)$; (ii) $2\cdot D(i,j)$; (iii) $D(i,j)/2$.</p></li>
 
 <li><p>Are there completely connected maps for which no solution exists?</p></li>
 
@@ -203,13 +209,13 @@ the same city twice?</p></li>
 <p><strong>3.6</strong> [8puzzle-parity-exercise] Show that the 8-puzzle states are divided
 into two disjoint sets, such that any state is reachable from any other
 state in the same set, while no state is reachable from any state in the
-other set. (<em>Hint:</em> See Berlekamp al:1982.) Devise a procedure to decide
+other set. (<em>Hint:</em> See @Berlekamp+al:1982.) Devise a procedure to decide
 which set a given state is in, and explain why this is useful for
 generating random states.</p>
 
-		  <p><strong>3.7</strong> [nqueens-size-exercise] Consider the <i>n</i>-queens problem using the
-“efficient” incremental formulation given on page nqueens - page 72. Explain why the state
-			  space has at least (n!)^(1/3) states and estimate the largest <i>n</i>
+<p><strong>3.7</strong> [nqueens-size-exercise] Consider the $n$-queens problem using the
+“efficient” incremental formulation given on page <a href="#/">nqueens-page</a>. Explain why the state
+space has at least $\sqrt[3]{n!}$ states and estimate the largest $n$
 for which exhaustive exploration is feasible. (<em>Hint</em>:
 Derive a lower bound on the branching factor by considering the maximum
 number of squares that a queen can attack in any column.)</p>
@@ -242,7 +248,7 @@ as shown in . This is an idealization of the problem that a robot has to
 solve to navigate in a crowded environment.</p>
 
 <ol>
-	<li><p>Suppose the state space consists of all positions <i>(x,y)</i> in
+<li><p>Suppose the state space consists of all positions $(x,y)$ in
 the plane. How many states are there? How many paths are there to
 the goal?</p></li>
 
@@ -262,7 +268,7 @@ the heuristic function.</p></li>
 of problems in the domain, and comment on their performance.</p></li>
 </ol>
 
-<p><strong>3.10</strong> [negative-g-exercise]On page 68 , we said that we would not consider problems
+<p><strong>3.10</strong> [negative-g-exercise]On page <a href="#/">non-negative-g</a>, we said that we would not consider problems
 with negative path costs. In this exercise, we explore this decision in
 more depth.</p>
 
@@ -272,7 +278,7 @@ explain why this possibility would force any optimal algorithm to
 explore the entire state space.</p></li>
 
 <li><p>Does it help if we insist that step costs must be greater than or
-	equal to some negative constant <i>c</i>? Consider both trees and graphs.</p></li>
+equal to some negative constant $c$? Consider both trees and graphs.</p></li>
 
 <li><p>Suppose that a set of actions forms a loop in the state space such
 that executing the set in some order results in no net change to
@@ -299,7 +305,7 @@ a boat that can hold one or two people. Find a way to get everyone to
 the other side without ever leaving a group of missionaries in one place
 outnumbered by the cannibals in that place. This problem is famous in AI
 because it was the subject of the first paper that approached problem
-formulation from an analytical viewpoint Amarel 1968.</p>
+formulation from an analytical viewpoint @Amarel:1968.</p>
 
 <ol>
 <li><p>Formulate the problem precisely, making only those distinctions
@@ -347,7 +353,7 @@ answers.</p>
 <li><p>Depth-first search always expands at least as many nodes as A search
 with an admissible heuristic.</p></li>
 
-<li><p><i>h(n)=0</i> is an admissible heuristic for the 8-puzzle.</p></li>
+<li><p>$h(n)=0$ is an admissible heuristic for the 8-puzzle.</p></li>
 
 <li><p>A is of no use in robotics because percepts, states, and actions
 are continuous.</p></li>
@@ -363,7 +369,7 @@ number of moves.</p></li>
 </ol>
 
 <p><strong>3.18</strong> Consider a state space where the start state is number 1 and each state
-	$k$ has two successors: numbers <i>2k</i> and <i>2k+1</i>.</p>
+$k$ has two successors: numbers $2k$ and $2k+1$.</p>
 
 <ol>
 <li><p>Draw the portion of the state space for states 1 to 15.</p></li>
@@ -379,8 +385,8 @@ the branching factor in each direction of the bidirectional search?</p></li>
 would allow you to solve the problem of getting from state 1 to a
 given goal state with almost no search?</p></li>
 
-	<li><p>Call the action going from <i>k</i> to <i>2k</i> Left, and the action going to
-		<i>2k+1</i> Right. Can you find an algorithm that outputs the solution to
+<li><p>Call the action going from $k$ to $2k$ Left, and the action going to
+$2k+1$ Right. Can you find an algorithm that outputs the solution to
 this problem without any search at all?</p></li>
 </ol>
 
@@ -412,7 +418,7 @@ modifies the parent state directly (undoing the modifications as
 needed). Write versions of iterative deepening depth-first search that
 use these functions and compare their performance.</p>
 
-<p><strong>3.21</strong> [iterative-lengthening-exercise]On page 90 - iterative-lengthening-page,
+<p><strong>3.21</strong> [iterative-lengthening-exercise]On page <a href="#/">iterative-lengthening-page</a>,
 we mentioned <strong>iterative lengthening search</strong>,
 an iterative analog of uniform cost search. The idea is to use increasing limits on
 path cost. If a node is generated whose path cost exceeds the current
@@ -423,12 +429,12 @@ iteration.</p>
 <ol>
 <li><p>Show that this algorithm is optimal for general path costs.</p></li>
 
-	<li><p>Consider a uniform tree with branching factor <i>b</i>, solution depth
-		<i>d</i>, and unit step costs. How many iterations will iterative
+<li><p>Consider a uniform tree with branching factor $b$, solution depth
+$d$, and unit step costs. How many iterations will iterative
 lengthening require?</p></li>
 
 <li><p>Now consider step costs drawn from the continuous range
-[ε, 1], where 0 < ε < 1. . How many iterations are
+$[\epsilon,1]$, where $0 &lt; \epsilon &lt; 1$. How many iterations are
 required in the worst case?</p></li>
 
 <li><p>Implement the algorithm and apply it to instances of the 8-puzzle
@@ -437,7 +443,8 @@ performance to that of uniform-cost search, and comment on
 your results.</p></li>
 </ol>
 
-<p><strong>3.22</strong> Describe a state space in which iterative deepening search performs much worse than depth-first search (for example, O(n^2) vs. O(n)).</p>
+<p><strong>3.22</strong> Describe a state space in which iterative deepening search performs much
+worse than depth-first search (for example, $O(n^{2})$ vs. $O(n)$).</p>
 
 <p><strong>3.23</strong> Write a program that will take as input two Web page URLs and find a
 path of links from one to the other. What is an appropriate search
@@ -452,11 +459,11 @@ for this problem? Should the algorithm use tree search or graph
 search?</p></li>
 
 <li><p>Apply your chosen algorithm to compute an optimal sequence of
-actions for a 3 X 3 world whose initial state has dirt in the
+actions for a $3\times 3$ world whose initial state has dirt in the
 three top squares and the agent in the center.</p></li>
 
 <li><p>Construct a search agent for the vacuum world, and evaluate its
-performance in a set of 3 X 3 worlds with probability 0.2 of
+performance in a set of $3\times 3$ worlds with probability 0.2 of
 dirt in each square. Include the search cost as well as path cost in
 the performance measure, using a reasonable exchange rate.</p></li>
 
@@ -464,8 +471,8 @@ the performance measure, using a reasonable exchange rate.</p></li>
 that sucks if there is dirt and otherwise moves randomly.</p></li>
 
 <li><p>Consider what would happen if the world were enlarged to
-n X n. How does the performance of the search agent and of
-	the reflex agent vary with <i>n</i>?</p></li>
+$n \times n$. How does the performance of the search agent and of
+the reflex agent vary with $n$?</p></li>
 </ol>
 
 <p><strong>3.25</strong> [search-special-case-exercise] Prove each of the following statements,
@@ -488,7 +495,7 @@ when a small random number is added to the heuristic values in the
 <p><strong>3.27</strong> Trace the operation of A search applied to the problem of getting to
 Bucharest from Lugoj using the straight-line distance heuristic. That
 is, show the sequence of nodes that the algorithm will consider and the
-	<i>f, g, and h</i> score for each node.</p>
+$f$, $g$, and $h$ score for each node.</p>
 
 <p><strong>3.28</strong> Sometimes there is no good evaluation function for a problem but there
 is a good comparison method: a way to tell whether one node is better
@@ -497,24 +504,28 @@ this is enough to do a best-first search. Is there an analog of A for
 this setting?</p>
 
 <p><strong>3.29</strong> [a*-failure-exercise]Devise a state space in which A using returns a
-suboptimal solution with an <i>h(n)</i> function that is admissible but
+suboptimal solution with an $h(n)$ function that is admissible but
 inconsistent.</p>
 
 <p><strong>3.30</strong> Accurate heuristics don’t necessarily reduce search time in the worst
-	case. Given any depth <i>d</i>, define a search problem with a goal node at
-	depth <i>d</i>, and write a heuristic function such that <i>|h(n) -
-	h^<em>(n)| \le O(\log h^</em>(n))</i> but A* expands all nodes of depth less
-than <i>d</i> .</p>
+case. Given any depth $d$, define a search problem with a goal node at
+depth $d$, and write a heuristic function such that $|h(n) -
+ h^<em>(n)| \le O(\log h^</em>(n))$ but A$^*$ expands all nodes of depth less
+than $d$.</p>
 
-		  <p><strong>3.31</strong> The <b>heuristic path algorithm</b> (Pohl, 1977) is a best-first search in which the evalu- ation function is f(n) = (2 − w)g(n) + wh(n). For what values of w is this complete? For what values is it optimal, assuming that h is admissible? What kind of search does this perform for w = 0, w = 1, and w = 2?</p>
+<p><strong>3.31</strong> The <strong>heuristic path algorithm</strong> @Pohl:1977 is a best-first search in which the evaluation function
+is $f(n) =
+(2-w)g(n) + wh(n)$. For what values of $w$ is this complete? For what
+values is it optimal, assuming that $h$ is admissible? What kind of
+search does this perform for $w=0$, $w=1$, and $w=2$?</p>
 
 <p><strong>3.32</strong> Consider the unbounded version of the regular 2D grid shown in . The
-	start state is at the origin, (0,0), and the goal state is at <i>(x,y)</i>.</p>
+start state is at the origin, (0,0), and the goal state is at $(x,y)$.</p>
 
 <ol>
-	<li><p>What is the branching factor <i>b</i> in this state space?</p></li>
+<li><p>What is the branching factor $b$ in this state space?</p></li>
 
-	<li><p>How many distinct states are there at depth <i>k</i> (for <i>k>0</i>)?</p></li>
+<li><p>How many distinct states are there at depth $k$ (for $k>0$)?</p></li>
 
 <li><p>What is the maximum number of nodes expanded by breadth-first tree
 search?</p></li>
@@ -522,36 +533,45 @@ search?</p></li>
 <li><p>What is the maximum number of nodes expanded by breadth-first graph
 search?</p></li>
 
-	<li><p>Is <i>h = |u-x| + |v-y|</i> an admissible heuristic for a state at
-		<i>(u,v)</i>? Explain.</p></li>
+<li><p>Is $h = |u-x| + |v-y|$ an admissible heuristic for a state at
+$(u,v)$? Explain.</p></li>
 
-	<li><p>How many nodes are expanded by A graph search using <i>h</i>?</p></li>
+<li><p>How many nodes are expanded by A graph search using $h$?</p></li>
 
-	<li><p>Does <i>h</i> remain admissible if some links are removed?</p></li>
+<li><p>Does $h$ remain admissible if some links are removed?</p></li>
 
-	<li><p>Does <i>h</i> remain admissible if some links are added between
+<li><p>Does $h$ remain admissible if some links are added between
 nonadjacent states?</p></li>
 </ol>
 
-		  <p><strong>3.33</strong> <i>n</i> vehicles occupy squares <i>(1,1)</i> through <i>(n,1)</i> (i.e., the bottom
-			  row) of an <i>n X n</i> grid. The vehicles must be moved to the top row
-			  but in reverse order; so the vehicle <i>i</i> that starts in <i>(i,1)</i> must end
-			  up in <i>(n-i+1,n)</i>. On each time step, every one of the <i>n</i> vehicles can
+<p><strong>3.33</strong> $n$ vehicles occupy squares $(1,1)$ through $(n,1)$ (i.e., the bottom
+row) of an $n\times n$ grid. The vehicles must be moved to the top row
+but in reverse order; so the vehicle $i$ that starts in $(i,1)$ must end
+up in $(n-i+1,n)$. On each time step, every one of the $n$ vehicles can
 move one square up, down, left, or right, or stay put; but if a vehicle
 stays put, one other adjacent vehicle (but not more than one) can hop
 over it. Two vehicles cannot occupy the same square.</p>
 
 <ol>
-	<li><p>Calculate the size of the state space as a function of <i>n</i>.</p></li>
+<li><p>Calculate the size of the state space as a function of $n$.</p></li>
 
-	<li><p>Calculate the branching factor as a function of <i>n</i>.</p></li>
+<li><p>Calculate the branching factor as a function of $n$.</p></li>
 
-	<li><p>Suppose that vehicle i is at (xi,yi); write a nontrivial admissible heuristic hi for the number of moves it will require to get to its goal location (n − i + 1, n), assuming no other vehicles are on the grid.</p></li>
+<li><p>Suppose that vehicle $i$ is at $(x<em>i,y</em>i)$; write a nontrivial
+admissible heuristic $h_i$ for the number of moves it will require
+to get to its goal location $(n-i+1,n)$, assuming no other vehicles
+are on the grid.</p></li>
 
 <li><p>Which of the following heuristics are admissible for the problem of
-	moving all <i>n</i> vehicles to their destinations? Explain.</p>
+moving all $n$ vehicles to their destinations? Explain.</p>
 
-<br /><img src="https://image.ibb.co/fCupL7/Screen_Shot_2018_03_04_at_5_18_06_PM.png"><br />
+<ol>
+<li><p>$\sum<em>{i= 1}^{n} h</em>i$.</p></li>
+
+<li><p>$\max{h<em>1,\ldots,h</em>n}$.</p></li>
+
+<li><p>$\min{h<em>1,\ldots,h</em>n}$.</p></li></ol></li>
+</ol>
 
 <p><strong>3.34</strong> Consider the problem of moving $k$ knights from $k$ starting squares
 $s<em>1,\ldots,s</em>k$ to $k$ goal squares $g<em>1,\ldots,g</em>k$, on an unbounded
@@ -580,7 +600,7 @@ which is the best?</p>
 knight at a time.</p></li>
 </ol>
 
-<p><strong>3.35</strong> We saw on page I-to-F that the straight-line distance heuristic leads greedy
+<p><strong>3.35</strong> We saw on page <a href="#/">I-to-F</a> that the straight-line distance heuristic leads greedy
 best-first search astray on the problem of going from Iasi to Fagaras.
 However, the heuristic is perfect on the opposite problem: going from
 Fagaras to Iasi. Are there problems for which the heuristic is
@@ -589,7 +609,7 @@ misleading in both directions?</p>
 <p><strong>3.36</strong> Invent a heuristic function for the 8-puzzle that sometimes
 overestimates, and show how it can lead to a suboptimal solution on a
 particular problem. (You can use a computer to help if you want.) Prove
-	that if <i>h</i> never overestimates by more than $c$, A using $h$ returns a
+that if $h$ never overestimates by more than $c$, A using $h$ returns a
 solution whose cost exceeds that of the optimal solution by no more than
 $c$.</p>
 
@@ -616,7 +636,12 @@ represented by random points in the unit square.</p></li>
 MST, and use it with A graph search to solve instances of the TSP.</p></li>
 </ol>
 
-<p><strong>3.39</strong> [Gaschnig-h-exercise]On page 105, we defined the relaxation of the 8-puzzle in which a tile can move from square A to square B if B is blank. The exact solution of this problem defines Gaschnig’s heuristic (Gaschnig, 1979). Explain why Gaschnig’s heuristic is at least as accurate as h1 (misplaced tiles), and show cases where it is more accurate than both h1 and h2 (Manhattan distance). Explain how to calculate Gaschnig’s heuristic efficiently.</p>
+<p><strong>3.39</strong> [Gaschnig-h-exercise]On page <a href="#/">Gaschnig-h-page</a> , we defined the relaxation of the 8-puzzle in
+which a tile can move from square A to square B if B is blank. The exact
+solution of this problem defines <strong>Gaschnig's heuristic</strong> @Gaschnig:1979. Explain why Gaschnig’s
+heuristic is at least as accurate as $h<em>1$ (misplaced tiles), and show
+cases where it is more accurate than both $h</em>1$ and $h_2$ (Manhattan
+distance). Explain how to calculate Gaschnig’s heuristic efficiently.</p>
 
 <p><strong>3.40</strong> We gave two simple heuristics for the 8-puzzle: Manhattan distance and
 misplaced tiles. Several heuristics in the literature purport to improve
