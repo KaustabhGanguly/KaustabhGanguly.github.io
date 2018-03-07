@@ -509,9 +509,9 @@ inconsistent.</p>
 
 <p><strong>3.30</strong> Accurate heuristics don’t necessarily reduce search time in the worst
 case. Given any depth $d$, define a search problem with a goal node at
-depth $d$, and write a heuristic function such that $|h(n) -
- h^<em>(n)| \le O(\log h^</em>(n))$ but A$^*$ expands all nodes of depth less
-than $d$.</p>
+depth $d$, and write a heuristic function such that $ |h(n) -
+ h ^ (n) | \le O( \log h^ (n) ) $ but A$^*$ expands all nodes of depth less
+than $d$ .</p>
 
 <p><strong>3.31</strong> The <strong>heuristic path algorithm</strong> @Pohl:1977 is a best-first search in which the evaluation function
 is $f(n) =
@@ -557,7 +557,7 @@ over it. Two vehicles cannot occupy the same square.</p>
 
 <li><p>Calculate the branching factor as a function of $n$.</p></li>
 
-<li><p>Suppose that vehicle $i$ is at $(x<em>i,y</em>i)$; write a nontrivial
+<li><p>Suppose that vehicle $i$ is at $ (x_i,y_i) $ ; write a nontrivial
 admissible heuristic $h_i$ for the number of moves it will require
 to get to its goal location $(n-i+1,n)$, assuming no other vehicles
 are on the grid.</p></li>
@@ -566,11 +566,11 @@ are on the grid.</p></li>
 moving all $n$ vehicles to their destinations? Explain.</p>
 
 <ol>
-<li><p>$\sum<em>{i= 1}^{n} h</em>i$.</p></li>
+<li><p> $ \sum {i= 1}^{n} h_i $ .</p></li>
 
-<li><p>$\max{h<em>1,\ldots,h</em>n}$.</p></li>
+<li><p> $ \max {h_1,\ldots,h_n} $ .</p></li>
 
-<li><p>$\min{h<em>1,\ldots,h</em>n}$.</p></li></ol></li>
+<li><p> $ \min{h_1,\ldots,h_n} $ .</p></li></ol></li>
 </ol>
 
 <p><strong>3.34</strong> Consider the problem of moving $k$ knights from $k$ starting squares
@@ -639,8 +639,8 @@ MST, and use it with A graph search to solve instances of the TSP.</p></li>
 <p><strong>3.39</strong> [Gaschnig-h-exercise]On page <a href="#/">Gaschnig-h-page</a> , we defined the relaxation of the 8-puzzle in
 which a tile can move from square A to square B if B is blank. The exact
 solution of this problem defines <strong>Gaschnig's heuristic</strong> @Gaschnig:1979. Explain why Gaschnig’s
-heuristic is at least as accurate as $h<em>1$ (misplaced tiles), and show
-cases where it is more accurate than both $h</em>1$ and $h_2$ (Manhattan
+heuristic is at least as accurate as $h_1$ (misplaced tiles), and show
+cases where it is more accurate than both $h_1$ and $h_2$ (Manhattan
 distance). Explain how to calculate Gaschnig’s heuristic efficiently.</p>
 
 <p><strong>3.40</strong> We gave two simple heuristics for the 8-puzzle: Manhattan distance and
