@@ -137,7 +137,7 @@
 <h2 id="43searchingwithnondeterministicactions2exercises2labelled">4.3: Searching with Nondeterministic Actions (2 exercises, 2 labelled)</h2>
 
 <p><h1>5.</h1> <i>[cond-plan-repeated-exercise]</i>:
- The AND-OR-GRAPH-SEARCH algorithm in : <img src="https://image.ibb.co/myHT87/Screen_Shot_2018_02_18_at_4_04_44_PM.png" alt="down" />
+ The AND-OR-GRAPH-SEARCH algorithm in : <img src="https://image.ibb.co/myHT87/Screen_Shot_2018_02_18_at_4_04_44_PM.png" alt="down"  style="width: 100%;" />
  checks for repeated states only on the path from the root to the current state. Suppose that, in addition, the algorithm were to store every visited state and check against that list. (See BREADTH-FIRST-SEARCH in Figure 3.11 from book for an example.) Determine the information that should be stored and how the algorithm should use that information when a repeated state is found. (Hint: You will need to distinguish at least between states for which a successful subplan was constructed previously and states for which no subplan could be found.) Explain how to use labels, as defined in Section 4.3.3, to avoid having multiple copies of subplans.
  (id=4.2 section=4.3.2)</p>
 
@@ -150,7 +150,7 @@
 <h2 id="44searchingwithpartialobservations5exercises4labelled">4.4: Searching with Partial Observations (5 exercises, 4 labelled)</h2>
 
 <p><h1>7.</h1> In Section 4.4.1 we introduced belief states to solve sensorless search problems. A sequence of actions solves a sensorless problem if it maps every physical state in the initial belief state <i>b</i> to a goal state. Suppose the agent knows h*(s), the true optimal cost of solving the physical state <i>s</i> in the fully observable problem, for every state <i>s</i> in <i>b</i>. Find an admissible heuristic <i>h(b)</i> for the sensorless problem in terms of these costs, and prove its admissibilty. Comment on the accuracy of this heuristic on the sensorless vacuum problem of : <br />
-<img src="https://image.ibb.co/gvmzFn/Screen_Shot_2018_02_18_at_4_29_31_PM.png" alt="down" /><br />
+<img src="https://image.ibb.co/gvmzFn/Screen_Shot_2018_02_18_at_4_29_31_PM.png" alt="down" style="width: 100%;"  /><br />
 How well does : A∗ perform?<br />
  id=4.4 section=4.4.1)</p>
 
@@ -184,7 +184,7 @@ N{1,3,5,7} , and explain why the problem is unsolvable.
 
 <p><h1>12.</h1> <i>[online-offline-exercise]</i> :
  Suppose that an agent is in a 3×3 maze environment like the one shown in Figure : <br />
-<img src="https://image.ibb.co/dNaJan/Screen_Shot_2018_02_18_at_4_47_14_PM.png" alt="down" /><br />
+<img src="https://image.ibb.co/dNaJan/Screen_Shot_2018_02_18_at_4_47_14_PM.png" alt="down"  style="width: 100%;" /><br />
 The agent knows that its initial location is (1,1), that the goal is at (3,3), and that the actions <i>Up, Down, Left, Right </i>have their usual effects unless blocked by a wall. The agent does not know where the internal walls are. In any given state, the agent perceives the set of legal actions; it can also tell whether the state is one it has visited before.
 a. Explain how this online search problem can be viewed as an offline search in belief-state space, where the initial belief state includes all possible environment configurations. How large is the initial belief state? How large is the space of belief states?
 b. How many distinct percepts are possible in the initial state?
@@ -239,7 +239,7 @@ Notice that this contingency plan is a solution for <i>every possible environmen
 
 
 <p><h1>17.</h1> <i>{safe-ratio-exercise}</i>
-  Extend the state spaces in <br /><img src="https://image.ibb.co/ksYfo7/Screen_Shot_2018_02_18_at_8_35_56_PM.png" alt="down" /> <br />to make them safely explorable, and prove that no bounded competitive ratio can be guaranteed in safely explorable environments.</p>
+  Extend the state spaces in <br /><img src="https://image.ibb.co/ksYfo7/Screen_Shot_2018_02_18_at_8_35_56_PM.png" alt="down"  style="width: 100%;" /> <br />to make them safely explorable, and prove that no bounded competitive ratio can be guaranteed in safely explorable environments.</p>
 
 
                 
