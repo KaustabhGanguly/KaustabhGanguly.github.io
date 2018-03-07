@@ -216,12 +216,12 @@ the fox.</p>
 <p>Discuss different representations of this problem as a CSP. Why would
 one prefer one representation over another?</p>
 
-<p><strong>6.8</strong> Consider the graph with 8 nodes $A<em>1$, $A</em>2$, $A<em>3$, $A</em>4$, $H$, $T$,
-$F<em>1$, $F</em>2$. $A<em>i$ is connected to $A</em>{i+1}$ for all $i$, each $A<em>i$ is
+<p><strong>6.8</strong> Consider the graph with 8 nodes $A_1$, $A_2$, $A_3$, $A_4$, $H$, $T$,
+$F_1$, $F_2$. $A_i$ is connected to $A_{i+1}$ for all $i$, each $A_i$ is
 connected to $H$, $H$ is connected to $T$, and $T$ is connected to each
-$F</em>i$. Find a 3-coloring of this graph by hand using the following
+$F_i$. Find a 3-coloring of this graph by hand using the following
 strategy: backtracking with conflict-directed backjumping, the variable
-order $A<em>1$, $H$, $A</em>4$, $F<em>1$, $A</em>2$, $F<em>2$, $A</em>3$, $T$, and the value
+order $A_1$, $H$, $A_4$, $F_1$, $A_2$, $F_2$, $A_3$, $T$, and the value
 order $R$, $G$, $B$.</p>
 
 <p><strong>6.9</strong> Explain why it is a good heuristic to choose the variable that is
@@ -242,23 +242,23 @@ you can manage. Comment on your results.</p>
 
 <p><strong>6.11</strong> Use the AC-3 algorithm to show that arc consistency can detect the
 inconsistency of the partial assignment
-${{WA}}{{,=,}}{green},V{{,=,}}{red}}$ for the problem
+{WA=green,V=red} for the problem
 shown in Figure <a href="#/">australia-figure</a>.</p>
 
 <p><strong>6.12</strong> Use the AC-3 algorithm to show that arc consistency can detect the
 inconsistency of the partial assignment
-${{WA}}{{,=,}}{red},V{{,=,}}{blue}}$ for the problem
+{WA=red,V=blue}  for the problem
 shown in Figure <a href="#/">australia-figure</a>.</p>
 
 <p><strong>6.13</strong> What is the worst-case complexity of running AC-3 on a tree-structured
 CSP?</p>
 
 <p><strong>6.14</strong> [ac4-exercise] AC-3 puts back on the queue <em>every</em> arc
-($X<em>{k}, X</em>{i}$) whenever <em>any</em> value is deleted from the
-domain of $X<em>{i}$, even if each value of $X</em>{k}$ is consistent with
-several remaining values of $X<em>{i}$. Suppose that, for every arc
-($X</em>{k}, X<em>{i}$), we keep track of the number of remaining values of
-$X</em>{i}$ that are consistent with each value of $X_{k}$. Explain how to
+($X_{k}, X_{i}$) whenever <em>any</em> value is deleted from the
+domain of $X_{i}$, even if each value of $X_{k}$ is consistent with
+several remaining values of $X_{i}$. Suppose that, for every arc
+($X_{k}, X_{i}$), we keep track of the number of remaining values of
+$X_{i}$ that are consistent with each value of $X_{k}$. Explain how to
 update these numbers efficiently and hence show that arc consistency can
 be enforced in total time $O(n^2d^2)$.</p>
 
