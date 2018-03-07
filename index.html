@@ -7,27 +7,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <title>AIMA Exercises</title>
-    
-
-    <style>section {
+      
+<style>
+      
+@media all and (min-width:960px) {
+  section {
   padding: 8vw;
-  border: 1.5vw solid #d3d3d3 ;
+  border: 2vw solid #d3d3d3 ;
+  border-bottom: 3vw dashed #d3d3d3;
 }
   
 .pad{
-  padding: 4vw;
-  border: 1vw solid black;
+  padding: 12vw;
+  border: 2vw solid #172727;
       }
       
-section div {
-  color: white;
-  padding: 1vw;
-
-}
 
 #grid {
   text-align: justify!important;
+  font-size: 0!important;
+  width: auto;
+
+}
+#grid > * {
+  text-align: center;
+  font-size: mediusm;
+}
+
+section {
+  text-align: justify!important;
+  font-size: 0!important;
+}
+
+section > * {
+  text-align: center;
+  font-size: large;
+  
+}
+section > div {
+  vertical-align: top;
+  display: inline-table;
+  width: 100%;
+  box-sizing: content-box;
+  
+}
+.head {
+  height: auto;
+  text-align: right;
+  display: inline-block;
   text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+
+}
+  .face {height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
+section > div.half  a {
+  text-decoration: none;
+  color: cornflowerblue;
+  text-align: left;
+
+      }
+
+body {
+  background: white;
+  font-family: Arial;
+  font-width: normal;
+}
+
+h1 {
+  font-size: 8vw ;
+  color: #4a5566;
+  text-align: left;
+  margin: 0 0 .8rem;
+}
+
+section {
+  /*div*/
+}
+section > div {
+  background: white;
+  position: sticky;
+  padding-top: 0.1rem;
+  padding: 1rem;
+}
+        
+section > div text {
+  display: inline-block;
+  text-align: left;
+  font-size: 2vw;
+  font-family:Monospace ;
+  padding: 0.1vw;
+  color: darkslategray;
+
+}
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+  section {
+  padding: 10vw;
+  border: 2vw solid #d3d3d3 ;
+  border-bottom: 3vw dashed #d3d3d3;
+}
+  
+.pad{
+  padding: 9vw;
+  border: 2vw solid #172727;
+      }
+      
+
+#grid {
+  text-align: justify!important;
   font-size: 0!important;
   width: auto;
 
@@ -55,37 +152,40 @@ section > div {
   
 }
 .head {
-  width: 100% ;
-  text-align: center;
+  height: auto;
+  text-align: right;
   display: inline-block;
   text-justify: distribute-all-lines;
   font-size: 0!important;
   width: calc((100% - 1vw) / 2);
 
 }
-section > div.half {
-  width: calc((100% - 1vw) / 6);
-  margin-bottom: 1rem;
-}
+    .face {height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
 section > div.half  a {
   text-decoration: none;
-  border-bottom: 1vw solid white;
   color: cornflowerblue;
   text-align: left;
-
 
       }
 
 body {
   background: white;
-  font-family: Arial ;
-  font-width: bold;
+  font-family: Arial;
+  font-width: normal;
 }
 
 h1 {
-  font-size: 5vw ;
+  font-size: 8vw ;
   color: #4a5566;
-  text-align: center;
+  text-align: left;
   margin: 0 0 .8rem;
 }
 
@@ -102,11 +202,523 @@ section > div {
 section > div text {
   display: inline-block;
   text-align: left;
-  font-family: Helvetica , Verdana , Monospace ;
+  font-size: 17px;
+  font-family:Monospace ;
   padding: 0.1vw;
   color: darkslategray;
 
 }
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+  section {
+  padding: 8vw;
+  border: 2vw solid #d3d3d3 ;
+  border-bottom: 3vw dashed #d3d3d3;
+}
+  
+.pad{
+  padding: 13vw;
+  border: 2vw solid #172727;
+      }
+      
+
+#grid {
+  text-align: justify!important;
+  font-size: 0!important;
+  width: auto;
+
+}
+#grid > * {
+  text-align: center;
+  font-size: medium;
+}
+
+section {
+  text-align: justify!important;
+  font-size: 0!important;
+}
+
+section > * {
+  text-align: center;
+  font-size: large;
+  
+}
+section > div {
+  vertical-align: top;
+  display: inline-table;
+  width: 100%;
+  box-sizing: content-box;
+  
+}
+.head {
+  height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+
+}
+    .face {height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
+section > div.half  a {
+  text-decoration: none;
+  color: cornflowerblue;
+  text-align: left;
+
+      }
+
+body {
+  background: white;
+  font-family: Arial;
+  font-width: normal;
+}
+
+h1 {
+  font-size: 5vw ;
+  color: #4a5566;
+  text-align: left;
+  margin: 0 0 .8rem;
+}
+
+section {
+  /*div*/
+}
+section > div {
+  background: white;
+  position: sticky;
+  padding-top: 0.1rem;
+  padding: 1rem;
+}
+        
+section > div text {
+  display: inline-block;
+  text-align: left;
+  font-size: 17px;
+  font-family:Monospace ;
+  padding: 0.1vw;
+  color: darkslategray;
+
+}
+}
+
+@media all and (min-width:569px) and (max-width: 768px) {
+  section {
+  padding: 8vw;
+  border: 2vw solid #d3d3d3 ;
+  border-bottom: 3vw dashed #d3d3d3;
+}
+  
+.pad{
+  padding: 13vw;
+  border: 2vw solid #172727;
+      }
+      
+
+#grid {
+  text-align: justify!important;
+  font-size: 0!important;
+  width: auto;
+
+}
+#grid > * {
+  text-align: center;
+  font-size: medium;
+}
+
+section {
+  text-align: justify!important;
+  font-size: 0!important;
+}
+
+section > * {
+  text-align: center;
+  font-size: large;
+  
+}
+section > div {
+  vertical-align: top;
+  display: inline-table;
+  width: 100%;
+  box-sizing: content-box;
+  
+}
+.head {
+  height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+
+}
+    .face {height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
+section > div.half  a {
+  text-decoration: none;
+  color: cornflowerblue;
+  text-align: left;
+
+      }
+
+body {
+  background: white;
+  font-family: Arial;
+  font-width: normal;
+}
+
+h1 {
+  font-size: 50px ;
+  color: #4a5566;
+  text-align: left;
+  margin: 0 0 .8rem;
+}
+
+section {
+  /*div*/
+}
+section > div {
+  background: white;
+  position: sticky;
+  padding-top: 0.1rem;
+  padding: 1rem;
+}
+        
+section > div text {
+  display: inline-block;
+  text-align: left;
+  font-size: 17px;
+  font-family:Monospace ;
+  padding: 0.1vw;
+  color: darkslategray;
+
+}
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+  section {
+  padding: 8vw;
+  border: 2vw solid #d3d3d3 ;
+  border-bottom: 3vw dashed #d3d3d3;
+}
+  
+.pad{
+  padding: 13vw;
+  border: 2vw solid #172727;
+      }
+      
+
+#grid {
+  text-align: justify!important;
+  font-size: 0!important;
+  width: auto;
+
+}
+#grid > * {
+  text-align: center;
+  font-size: medium;
+}
+
+section {
+  text-align: justify!important;
+  font-size: 0!important;
+}
+
+section > * {
+  text-align: center;
+  font-size: large;
+  
+}
+section > div {
+  vertical-align: top;
+  display: inline-table;
+  width: 100%;
+  box-sizing: content-box;
+  
+}
+.head {
+  height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+
+}
+    .face {height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
+section > div.half  a {
+  text-decoration: none;
+  color: cornflowerblue;
+  text-align: left;
+
+      }
+
+body {
+  background: white;
+  font-family: Arial;
+  font-width: normal;
+}
+
+h1 {
+  font-size: 5vw ;
+  color: #4a5566;
+  text-align: left;
+  margin: 0 0 .8rem;
+}
+
+section {
+  /*div*/
+}
+section > div {
+  background: white;
+  position: sticky;
+  padding-top: 0.1rem;
+  padding: 1rem;
+}
+        
+section > div text {
+  display: inline-block;
+  text-align: left;
+  font-size: 13px;
+  font-family:Monospace ;
+  padding: 0.1vw;
+  color: darkslategray;
+
+}
+}
+
+/* mobile design */
+    
+    
+    
+    
+@media all and (min-width:321px) and (max-width: 480px) {
+  section {
+  padding: 8vw;
+  border-bottom: 3vw dashed #d3d3d3;
+  border-top: 2px solid black
+}
+  
+.pad{
+  padding: 10px ;
+  border: 10px solid #d3d3d3;
+      }
+      
+
+#grid {
+  text-align: justify!important;
+  font-size: 0!important;
+  width: auto;
+
+}
+#grid > * {
+  text-align: center;
+  font-size: medium;
+}
+
+section {
+  text-align: justify!important;
+  font-size: 0!important;
+}
+
+section > * {
+  text-align: center;
+  font-size: large;
+  
+}
+section > div {
+  vertical-align: top;
+  display: inline-table;
+  width: 100%;
+  box-sizing: content-box;
+  
+}
+.head {
+  height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: 100%;
+
+}
+    .face {height: auto;
+  text-align: right;
+  display: none;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
+section > div.half  a {
+  text-decoration: none;
+  color: cornflowerblue;
+  text-align: left;
+
+      }
+
+body {
+  background: white;
+  font-family: Arial;
+  font-width: normal;
+}
+
+h1 {
+  font-size: 47px ;
+  font-weight: bold;
+  font-family: courier , fantasy ;
+  color: #4a5566;
+  padding: 10px;
+  text-align: center;
+  margin: 0 0 .8rem;
+}
+
+section {
+  /*div*/
+}
+section > div {
+  background: white;
+  position: sticky;
+  padding: 10px;
+}
+        
+section > div text {
+  display: inline-block;
+  text-align: left;
+  font-size: 13px ;
+  font-family:Monospace ;
+  padding: 0.1vw;
+  color: darkslategray;
+
+}
+}
+
+@media all and (min-width:0px) and (max-width: 320px) {
+  section {
+  padding: 8vw;
+  border-bottom: 3vw dashed #d3d3d3;
+  border-top: 2px solid black
+}
+  
+.pad{
+  padding: 10px ;
+  border: 10px solid #d3d3d3;
+      }
+      
+
+#grid {
+  text-align: justify!important;
+  font-size: 0!important;
+  width: auto;
+
+}
+#grid > * {
+  text-align: center;
+  font-size: medium;
+}
+
+section {
+  text-align: justify!important;
+  font-size: 0!important;
+}
+
+section > * {
+  text-align: center;
+  font-size: large;
+  
+}
+section > div {
+  vertical-align: top;
+  display: inline-table;
+  width: 100%;
+  box-sizing: content-box;
+  
+}
+.head {
+  height: auto;
+  text-align: right;
+  display: inline-block;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: 100%;
+
+}
+    .face {height: auto;
+  text-align: right;
+  display: none;
+  text-justify: distribute-all-lines;
+  font-size: 0!important;
+  width: calc((100% - 1vw) / 2);
+        
+    }
+
+section > div.half  a {
+  text-decoration: none;
+  color: cornflowerblue;
+  text-align: left;
+
+      }
+
+body {
+  background: white;
+  font-family: Arial;
+  font-width: normal;
+}
+
+h1 {
+  font-size: 13vw ;
+  font-weight: bold;
+  font-family: courier , fantasy ;
+  color: #4a5566;
+  padding: 10px;
+  text-align: center;
+  margin: 0 0 .8rem;
+}
+
+section {
+  /*div*/
+}
+section > div {
+  background: white;
+  position: sticky;
+  padding: 10px;
+}
+        
+section > div text {
+  display: inline-block;
+  text-align: left;
+  font-size: 3.2vw ;
+  font-family:Monospace ;
+  padding: 0.1vw;
+  color: darkslategray;
+
+}
+}
+    
 
 
 </style>
@@ -116,13 +728,12 @@ section > div text {
   </head>
 
   <body>
-      <article>
                 <div class="pad">
 <div class="head">
     <h1 style="vertical-align: top; padding-bottom: 2vw;" >AIMA EXERCISES</h1>
   </div>
-     <div class="head">
-    <img src="https://u.imageresize.org/96732d19-a587-4b73-98fb-1aca8d83a735.jpeg" alt="Avatar" style="border-radius: 50%;   horizontal-align: right;">
+     <div class="face">
+    <img src="https://u.imageresize.org/96732d19-a587-4b73-98fb-1aca8d83a735.jpeg" alt="Avatar" style="border-radius: 50%; width : inherit">
 
   </div>
     <section>
@@ -205,14 +816,13 @@ section > div text {
     <div class="half">
       <text><a href="future_exercise.html" >Future Exercise</a></text>
   </div>
-  
-          <footer>
-      <p ><br />Copyright &copy; Peter Norvig</p>
-    </footer>
+        <div class="half">
+            <footer><text style="font-size: 2vw"><br />Copyright &copy; Peter Norvig </text></footer>
+            </div>
+
+           </section>
       </div>
-      </section>
-      </article>
-      </div>
+    
     
 
   </body>
