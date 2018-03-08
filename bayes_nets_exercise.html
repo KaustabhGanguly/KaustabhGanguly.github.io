@@ -220,12 +220,12 @@ rejection sampling and (ii) likelihood weighting.</p></li>
 <b id="handedness-figure">Figure [handedness-figure]</b> Three possible structures for a Bayesian network describing genetic inheritance of handedness.
 </center></p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/handedness1.svg" alt="handedness-figure" styl="width: 100%;" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/handedness1.svg" alt="handedness-figure" style="width: 100%;" /></p>
 
-<p><strong>14.7</strong> [handedness-exercise] Let $H<em>x$ be a random variable denoting the
+<p><strong>14.7</strong> [handedness-exercise] Let $H_x$ be a random variable denoting the
 handedness of an individual $x$, with possible values $l$ or $r$. A
 common hypothesis is that left- or right-handedness is inherited by a
-simple mechanism; that is, perhaps there is a gene $G</em>x$, also with
+simple mechanism; that is, perhaps there is a gene $G_x$, also with
 values $l$ or $r$, and perhaps actual handedness turns out mostly the
 same (with some probability $s$) as the gene an individual possesses.
 Furthermore, perhaps the gene itself is equally likely to be inherited
@@ -235,7 +235,7 @@ $m$ of a random mutation flipping the handedness.</p>
 <ol>
 <li><p>Which of the three networks in
 Figure <a href="#handedness-figure">handedness-figure</a> claim that
-$ {\textbf{P}}(G<em>{{father}},G</em>{{mother}},G<em>{{child}}) = {\textbf{P}}(G</em>{{father}}){\textbf{P}}(G<em>{{mother}}){\textbf{P}}(G</em>{{child}})$?</p></li>
+$ {\textbf{P}}(G_{{father}},G_{{mother}},G_{{child}}) = {\textbf{P}}(G_{{father}}){\textbf{P}}(G_{{mother}}){\textbf{P}}(G_{{child}})$?</p></li>
 
 <li><p>Which of the three networks make independence claims that are
 consistent with the hypothesis about the inheritance of handedness?</p></li>
@@ -247,7 +247,7 @@ hypothesis?</p></li>
 terms of $s$ and $m$.</p></li>
 
 <li><p>Suppose that
-$P(G<em>{{father}}{{,=,}}l)=P(G</em>{{mother}}{{,=,}}l)=q$. In
+$P(G_{{father}}{{,=,}}l)=P(G_{{mother}}{{,=,}}l)=q$. In
 network (a), derive an expression for $P(G_{{child}}{{,=,}}l)$
 in terms of $m$ and $q$ only, by conditioning on its parent nodes.</p></li>
 
@@ -582,9 +582,9 @@ convex composition is also in detailed balance with $\pi$.
 variables are chosen at random rather than sampled in a
 fixed sequence.)</p></li>
 
-<li><p>Prove that if each of $q<em>1$ and $q</em>2$ has $\pi$ as its stationary
+<li><p>Prove that if each of $q_1$ and $q_2$ has $\pi$ as its stationary
 distribution, then the sequential composition
-$q {{,=,}}q_1 \circ q_2$ also has $\pi$ as its
+$q {{,=,}}q_1 \circ q_2 $ also has $\pi$ as its
 stationary distribution.</p></li>
 </ol>
 
