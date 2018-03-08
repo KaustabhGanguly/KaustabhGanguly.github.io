@@ -179,7 +179,7 @@ text, but be sure to list these explicitly.</p>
 exercise:</p>
 
 <ol>
-<li><p>In situation $S<em>0$, window $W</em>1$ is behind $W_2$ but sticks out on
+<li><p>In situation $S_0$, window $W_1$ is behind $W_2$ but sticks out on
 the left and right. Do <em>not</em> state exact coordinates
 for these; describe the <em>general</em> situation.</p></li>
 
@@ -195,7 +195,7 @@ bottom edge.</p></li>
 exercise:</p>
 
 <ol>
-<li><p>In situation $S<em>0$, window $W</em>1$ is behind $W_2$ but sticks out on
+<li><p>In situation $S_0$, window $W_1$ is behind $W_2$ but sticks out on
 the top and bottom. Do <em>not</em> state exact coordinates
 for these; describe the <em>general</em> situation.</p></li>
 
@@ -508,9 +508,10 @@ intractability of certain computational problems.</p></li>
 <p><strong>12.25</strong> Translate the following description logic expression (from
 page <a href="#/">description-logic-ex</a>) into first-order logic, and comment on the result:</p>
 
-<p>$$ 
-And(Man, AtLeast(3,Son), AtMost(2,Daughter), All(Son,And(Unemployed,Married, All(Spouse,Doctor ))), All(Daughter,And(Professor, Fills(Department ,Physics,Math))))
-$$</p>
+<p>$
+And(Man, AtLeast(3,Son), AtMost(2,Daughter), All(Son,And(Unemployed,Married, All(Spouse,Doctor ))), 
+All(Daughter,And(Professor, Fills(Department ,Physics,Math))))
+$</p>
 
 <p><strong>12.26</strong> Recall that inheritance information in semantic networks can be captured
 logically by suitable implication sentences. This exercise investigates
@@ -569,18 +570,18 @@ and <a href="#/">nlp-english-chapter</a>.) One small step is to allow the user t
 specify minimum and maximum values for various attributes. The buyer
 must use the following grammar for product descriptions:</p>
 
-<p>$$
+<p>$
 Description \rightarrow Category \space [Connector \space Modifier]*
-$$
-$$
+$
+$
 Connector \rightarrow "with" \space | "and" | ","
-$$
-$$
+$
+$
 Modifier \rightarrow Attribute \space |\space Attribute \space Op \space Value
-$$
-$$
+$
+$
 Op \rightarrow "=" | "\gt" | "\lt"
-$$</p>
+$</p>
 
 <p>Here, ${Category}$ names a product category, ${Attribute}$ is some
 feature such as “CPU” or “price,” and ${Value}$ is the target value
