@@ -108,7 +108,7 @@
 of coming up heads of 20%, 60%, and 80%, respectively. One coin is drawn
 randomly from the bag (with equal likelihood of drawing each of the
 three coins), and then the coin is flipped three times to generate the
-outcomes $X<em>1$, $X</em>2$, and $X_3$.</p>
+outcomes $X_1$, $X_2$, and $X_3$.</p>
 
 <ol>
 <li><p>Draw the Bayesian network corresponding to this setup and define the
@@ -122,7 +122,7 @@ if the observed flips come out heads twice and tails once.</p></li>
 of coming up heads of 30%, 60%, and 75%, respectively. One coin is drawn
 randomly from the bag (with equal likelihood of drawing each of the
 three coins), and then the coin is flipped three times to generate the
-outcomes $X<em>1$, $X</em>2$, and $X_3$.</p>
+outcomes $X_1$, $X_2$, and $X_3$.</p>
 
 <ol>
 <li><p>Draw the Bayesian network corresponding to this setup and define the
@@ -136,9 +136,9 @@ if the observed flips come out heads twice and tails once.</p></li>
 Equation (<a href="#/">parameter-joint-repn-equation</a>) on
 page <a href="#/">parameter-joint-repn-equation</a> defines the joint distribution represented by a
 Bayesian network in terms of the parameters
-$\theta(X<em>i{{,|,}}{Parents}(X</em>i))$. This exercise asks you to derive
+$\theta(X_i{{,|,}}{Parents}(X_i))$. This exercise asks you to derive
 the equivalence between the parameters and the conditional probabilities
-${\textbf{ P}}(X<em>i{{,|,}}{Parents}(X</em>i))$ from this definition.</p>
+${\textbf{ P}}(X_i{{,|,}}{Parents}(X_i))$ from this definition.</p>
 
 <ol>
 <li><p>Consider a simple network $X\rightarrow Y\rightarrow Z$ with three
@@ -156,11 +156,11 @@ $\theta(X)$, $\theta(Y{{,|,}}X)$, and $\theta(Z{{,|,}}Y)$.</p></li>
 writing out explicitly the terms for the true and false values of
 each summed variable. Assuming that all network parameters satisfy
 the constraint
-$\sum<em>{x</em>i} \theta(x<em>i{{,|,}}{parents}(X</em>i)){{,=,}}1$, show
+$\sum_{x_i} \theta(x_i{{,|,}}{parents}(X_i)){{,=,}}1$, show
 that the resulting expression reduces to $\theta(z{{,|,}}y)$.</p></li>
 
 <li><p>Generalize this derivation to show that
-$\theta(X<em>i{{,|,}}{Parents}(X</em>i)) = {\textbf{P}}(X<em>i{{,|,}}{Parents}(X</em>i))$
+$\theta(X_i{{,|,}}{Parents}(X_i)) = {\textbf{P}}(X_i{{,|,}}{Parents}(X_i))$
 for any Bayesian network.</p></li>
 </ol>
 
@@ -182,9 +182,9 @@ not be disjoint.)</p></li>
 
 <li><p>Let the parents of $X$ be $\textbf{U} \cup \textbf{V}$ and the parents of $Y$ be
 $\textbf{V} \cup \textbf{W}$, where $\textbf{U}$ and $\textbf{W}$ are disjoint. The formulas for the
-new CPTs after arc reversal are as follows: $$\begin{aligned}
+new CPTs after arc reversal are as follows: $\begin{aligned}
 {\textbf{P}}(Y{{,|,}}\textbf{U},\textbf{V},\textbf{W}) &amp;=&amp; \sum_x {\textbf{P}}(Y{{,|,}}\textbf{V},\textbf{W}, x) {\textbf{P}}(x{{,|,}}\textbf{U}, \textbf{V}) \
-{\textbf{P}}(X{{,|,}}\textbf{U},\textbf{V},\textbf{W}, Y) &amp;=&amp; {\textbf{P}}(Y{{,|,}}X, \textbf{V}, \textbf{W}) {\textbf{P}}(X{{,|,}}\textbf{U}, \textbf{V}) / {\textbf{P}}(Y{{,|,}}\textbf{U},\textbf{V},\textbf{W})\ .\end{aligned}$$
+{\textbf{P}}(X{{,|,}}\textbf{U},\textbf{V},\textbf{W}, Y) &amp;=&amp; {\textbf{P}}(Y{{,|,}}X, \textbf{V}, \textbf{W}) {\textbf{P}}(X{{,|,}}\textbf{U}, \textbf{V}) / {\textbf{P}}(Y{{,|,}}\textbf{U},\textbf{V},\textbf{W})\ .\end{aligned}$
 Prove that the new network expresses the same joint distribution
 over all variables as the original network.</p></li>
 </ol>
@@ -220,7 +220,7 @@ rejection sampling and (ii) likelihood weighting.</p></li>
 <b id="handedness-figure">Figure [handedness-figure]</b> Three possible structures for a Bayesian network describing genetic inheritance of handedness.
 </center></p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/handedness1.svg" alt="handedness-figure" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/handedness1.svg" alt="handedness-figure" styl="width: 100%;" /></p>
 
 <p><strong>14.7</strong> [handedness-exercise] Let $H<em>x$ be a random variable denoting the
 handedness of an individual $x$, with possible values $l$ or $r$. A
@@ -269,7 +269,7 @@ Equation (<a href="#/">markov-blanket-equation</a>)
 <b id="car-starts-figure">Figure [car-starts-figure]</b> A Bayesian network describing some features of a car's electrical system and engine. Each variable is Boolean, and the <em>true</em> value indicates that the corresponding aspect of the vehicle is in working order.
 </center></p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/car-starts.svg" alt="car-starts-figure" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/car-starts.svg" alt="car-starts-figure" style="width: 100%;" /></p>
 
 <p><strong>14.9</strong> Consider the network for car diagnosis shown in
 Figure <a href="#car-starts-figure">car-starts-figure</a>.</p>
@@ -305,14 +305,14 @@ equivalence.</p>
 defined on page <a href="#/">LG-network-page</a>.</p>
 
 <ol>
-<li><p>In a two-variable network, let $X<em>1$ be the parent of $X</em>2$, let
-$X<em>1$ have a Gaussian prior, and let
-${\textbf{P}}(X</em>2{{,|,}}X<em>1)$ be a linear
-Gaussian distribution. Show that the joint distribution $P(X</em>1,X_2)$
+<li><p>In a two-variable network, let $X_1$ be the parent of $X_2$, let
+$X_1$ have a Gaussian prior, and let
+${\textbf{P}}(X_{{,|,}}X_1)$ be a linear
+Gaussian distribution. Show that the joint distribution $P(X_1,X_2)$
 is a multivariate Gaussian, and calculate its covariance matrix.</p></li>
 
 <li><p>Prove by induction that the joint distribution for a general linear
-Gaussian network on $X<em>1,\ldots,X</em>n$ is also a
+Gaussian network on $X_1,\ldots,X_n$ is also a
 multivariate Gaussian.</p></li>
 </ol>
 
@@ -336,7 +336,7 @@ into two sets, to mimic a Boolean variable.)</p></li>
 <p><strong>14.13</strong> In your local nuclear power station, there is an alarm that senses when
 a temperature gauge exceeds a given threshold. The gauge measures the
 temperature of the core. Consider the Boolean variables $A$ (alarm
-sounds), $F<em>A$ (alarm is faulty), and $F</em>G$ (gauge is faulty) and the
+sounds), $F_A$ (alarm is faulty), and $F_G$ (gauge is faulty) and the
 multivalued nodes $G$ (gauge reading) and $T$ (actual core temperature).</p>
 
 <ol>
@@ -362,11 +362,11 @@ probabilities in the network.</p></li>
 </ol>
 
 <p><strong>14.14</strong> [telescope-exercise] Two astronomers in different parts of the world
-make measurements $M<em>1$ and $M</em>2$ of the number of stars $N$ in some
+make measurements $M_1$ and $M_2$ of the number of stars $N$ in some
 small region of the sky, using their telescopes. Normally, there is a
 small possibility $e$ of error by up to one star in each direction. Each
 telescope can also (with a much smaller probability $f$) be badly out of
-focus (events $F<em>1$ and $F</em>2$), in which case the scientist will
+focus (events $F_1$ and $F_2$), in which case the scientist will
 undercount by three or more stars (or if $N$ is less than 3, fail to
 detect any stars at all). Consider the three networks shown in
 Figure <a href="#telescope-nets-figure">telescope-nets-figure</a>.</p>
@@ -378,12 +378,12 @@ necessarily efficient) representations of the preceding information?</p></li>
 <li><p>Which is the best network? Explain.</p></li>
 
 <li><p>Write out a conditional distribution for
-${\textbf{P}}(M<em>1{{,|,}}N)$, for the case where
-$N{{,\in\,}}{1,2,3}$ and $M</em>1{{,\in\,}}{0,1,2,3,4}$. Each
+${\textbf{P}}(M_1{{,|,}}N)$, for the case where
+$N{{,\in\,}}{1,2,3}$ and $M_1{{,\in\,}}{0,1,2,3,4}$. Each
 entry in the conditional distribution should be expressed as a
 function of the parameters $e$ and/or $f$.</p></li>
 
-<li><p>Suppose $M<em>1{{,=,}}1$ and $M</em>2{{,=,}}3$. What are the
+<li><p>Suppose $M_1{{,=,}}1$ and $M_2{{,=,}}3$. What are the
 <em>possible</em> numbers of stars if you assume no prior
 constraint on the values of $N$?</p></li>
 
@@ -396,24 +396,24 @@ would affect the result.</p></li>
 <p><strong>14.15</strong> Consider the network shown in
 Figure <a href="#telescope-nets-figure">telescope-nets-figure</a>(ii), and assume that the
 two telescopes work identically. $N{{,\in\,}}{1,2,3}$ and
-$M<em>1,M</em>2{{,\in\,}}{0,1,2,3,4}$, with the symbolic CPTs as described
+$M_1,M_2{{,\in\,}}{0,1,2,3,4}$, with the symbolic CPTs as described
 in Exercise <a href="#/">telescope-exercise</a>. Using the enumeration
 algorithm (Figure <a href="#/">enumeration-algorithm</a> on
 page <a href="#/">enumeration-algorithm</a>), calculate the probability distribution
-${\textbf{P}}(N{{,|,}}M<em>1{{,=,}}2,M</em>2{{,=,}}2)$.</p>
+${\textbf{P}}(N{{,|,}}M_1{{,=,}}2,M_2{{,=,}}2)$.</p>
 
-<p><center>
+<p>
 <b id="telescope-nets-figure">Figure [telescope-nets-figure]</b> Three possible networks for the telescope problem.
-</center></p>
+</p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/telescope-nets.svg" alt="telescope-nets-figure" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/telescope-nets.svg" alt="telescope-nets-figure" style="width: 100%;"/></p>
 
-<p><center>
+<p>
 <b id="politics-figure">Figure [politics-figure]</b> A simple Bayes net with
 Boolean variables B = {BrokeElectionLaw}, I = {Indicted}, M = {PoliticallyMotivatedProsecutor}, G= {FoundGuilty}, J = {Jailed}.
-</center></p>
+</p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/politics.svg" alt="politics-figure" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/politics.svg" alt="politics-figure" style="width: 100%;" /></p>
 
 <p><strong>14.16</strong> Consider the Bayes net shown in Figure <a href="#politics-figure">politics-figure</a>.</p>
 
@@ -422,11 +422,11 @@ Boolean variables B = {BrokeElectionLaw}, I = {Indicted}, M = {PoliticallyMotiva
 <em>structure</em>?</p>
 
 <ol>
-<li><p>${\textbf{P}}(B,I,M) = {\textbf{P}}(B){\textbf{P}}(I){\textbf{P}}(M)$.</p></li>
+<li><p> ${\textbf{P}}(B,I,M) = {\textbf{P}}(B){\textbf{P}}(I){\textbf{P}}(M)$ .</p></li>
 
-<li><p>${\textbf{P}}(J{{,|,}}G) = {\textbf{P}}(J{{,|,}}G,I)$.</p></li>
+<li><p> ${\textbf{P}}(J{{,|,}}G) = {\textbf{P}}(J{{,|,}}G,I)$ .</p></li>
 
-<li><p>${\textbf{P}}(M{{,|,}}G,B,I) = {\textbf{P}}(M{{,|,}}G,B,I,J)$.</p></li></ol></li>
+<li><p> ${\textbf{P}}(M{{,|,}}G,B,I) = {\textbf{P}}(M{{,|,}}G,B,I,J)$ .</p></li></ol></li>
 
 <li><p>Calculate the value of $P(b,i,\lnot m,g,j)$.</p></li>
 
@@ -442,7 +442,7 @@ context-specific independences exist in the Bayes net in
 Figure <a href="#politics-figure">politics-figure</a>?</p></li>
 
 <li><p>Suppose we want to add the variable
-$P{{,=,}}{PresidentialPardon}$ to the network; draw the new
+$ P{{,=,}}{PresidentialPardon} $ to the network; draw the new
 network and briefly explain any links you add.</p></li>
 </ol>
 
@@ -453,13 +453,13 @@ network and briefly explain any links you add.</p></li>
 <em>structure</em> (ignoring the CPTs for now)?</p>
 
 <ol>
-<li><p>${\textbf{P}}(B,I,M) = {\textbf{P}}(B){\textbf{P}}(I){\textbf{P}}(M)$.</p></li>
+<li><p> $ {\textbf{P}}(B,I,M) = {\textbf{P}}(B){\textbf{P}}(I){\textbf{P}}(M) $ .</p></li>
 
-<li><p>${\textbf{P}}(J{{,|,}}G) = {\textbf{P}}(J{{,|,}}G,I)$.</p></li>
+<li><p> $ {\textbf{P}}(J{{,|,}}G) = {\textbf{P}}(J{{,|,}}G,I) $ .</p></li>
 
-<li><p>${\textbf{P}}(M{{,|,}}G,B,I) = {\textbf{P}}(M{{,|,}}G,B,I,J)$.</p></li></ol></li>
+<li><p> $ {\textbf{P}}(M{{,|,}}G,B,I) = {\textbf{P}}(M{{,|,}}G,B,I,J) $ .</p></li></ol></li>
 
-<li><p>Calculate the value of $P(b,i,m,\lnot g,j)$.</p></li>
+<li><p>Calculate the value of $ P(b,i,m,\lnot g,j) $ .</p></li>
 
 <li><p>Calculate the probability that someone goes to jail given that they
 broke the law, have been indicted, and face a politically
@@ -473,7 +473,7 @@ context-specific independences exist in the Bayes net in
 Figure <a href="#politics-figure">politics-figure</a>?</p></li>
 
 <li><p>Suppose we want to add the variable
-$P{{,=,}}{PresidentialPardon}$ to the network; draw the new
+$ P{{,=,}}{PresidentialPardon} $ to the network; draw the new
 network and briefly explain any links you add.</p></li>
 </ol>
 
@@ -483,7 +483,7 @@ Figure <a href="#/">elimination-ask-algorithm</a> (page <a href="#/">elimination
 <ol>
 <li><p>Section <a href="#/">exact-inference-section</a> applies variable
 elimination to the query
-$${\textbf{P}}({Burglary}{{,|,}}{JohnCalls}{{,=,}}{true},{MaryCalls}{{,=,}}{true})\ .$$
+${\textbf{P}}({Burglary}{{,|,}}{JohnCalls}{{,=,}}{true},{MaryCalls}{{,=,}}{true})\ $
 Perform the calculations indicated and check that the answer
 is correct.</p></li>
 
@@ -491,10 +491,10 @@ is correct.</p></li>
 with the number performed by the enumeration algorithm.</p></li>
 
 <li><p>Suppose a network has the form of a <em>chain</em>: a sequence
-of Boolean variables $X<em>1,\ldots, X</em>n$ where
-${Parents}(X<em>i){{,=,}}{X</em>{i-1}}$ for $i{{,=,}}2,\ldots,n$.
+of Boolean variables $X_1,\ldots, X_n$ where
+${Parents}(X_i){{,=,}}{X_{i-1}}$ for $i{{,=,}}2,\ldots,n$.
 What is the complexity of computing
-${\textbf{P}}(X<em>1{{,|,}}X</em>n{{,=,}}{true})$ using
+${\textbf{P}}(X_1{{,|,}}X_n{{,=,}}{true})$ using
 enumeration? Using variable elimination?</p></li>
 
 <li><p>Prove that the complexity of running variable elimination on a
@@ -524,9 +524,9 @@ uniformly distributed between 0 and 1.</p>
 
 <ol>
 <li><p>Let $X$ be a discrete variable with
-$P(X{{,=,}}x<em>i){{,=,}}p</em>i$ for
+$P(X{{,=,}}x_i){{,=,}}p_i$ for
 $i{{,\in\,}}{1,\ldots,k}$. The <strong>cumulative distribution</strong> of $X$ gives the probability
-that $X{{,\in\,}}{x<em>1,\ldots,x</em>j}$ for each possible $j$. (See
+that $X{{,\in\,}}{x_1,\ldots,x_j}$ for each possible $j$. (See
 also Appendix [math-appendix].) Explain how to
 calculate the cumulative distribution in $O(k)$ time and how to
 generate a single sample of $X$ from it. Can the latter be done in
@@ -572,11 +572,11 @@ practical way to do inference?</p></li>
 distribution for Gibbs sampling methods.</p>
 
 <ol>
-<li><p>The convex composition $[\alpha, q<em>1; 1-\alpha, q</em>2]$ of $q<em>1$ and
-$q</em>2$ is a transition probability distribution that first chooses
-one of $q<em>1$ and $q</em>2$ with probabilities $\alpha$ and $1-\alpha$,
+<li><p>The convex composition $[\alpha, q_1; 1-\alpha, q_2]$ of $q_1$ and
+$q_2$ is a transition probability distribution that first chooses
+one of $q_1$ and $q_2$ with probabilities $\alpha$ and $1-\alpha$,
 respectively, and then applies whichever is chosen. Prove that if
-$q<em>1$ and $q</em>2$ are in detailed balance with $\pi$, then their
+$q_1$ and $q_2$ are in detailed balance with $\pi$, then their
 convex composition is also in detailed balance with $\pi$.
 (<em>Note</em>: this result justifies a variant of GIBBS-ASK in which
 variables are chosen at random rather than sampled in a
@@ -584,7 +584,7 @@ fixed sequence.)</p></li>
 
 <li><p>Prove that if each of $q<em>1$ and $q</em>2$ has $\pi$ as its stationary
 distribution, then the sequential composition
-$q {{,=,}}q<em>1 \circ q</em>2$ also has $\pi$ as its
+$q {{,=,}}q_1 \circ q_2$ also has $\pi$ as its
 stationary distribution.</p></li>
 </ol>
 
@@ -595,7 +595,7 @@ $\pi(\textbf{x}){{,=,}}P(\textbf{x}{{,|,}}\textbf{e})$.) Like simulated annealin
 Metropolis–Hastings operates in two stages. First, it samples a new
 state $\textbf{x'}$ from a <strong>proposal distribution</strong> $q(\textbf{x'}{{,|,}}\textbf{x})$, given the current state $\textbf{x}$.
 Then, it probabilistically accepts or rejects $\textbf{x'}$ according to the <strong>acceptance probability</strong>
-$$\alpha(\textbf{x'}{{,|,}}\textbf{x}) = \min\ \left(1,\frac{\pi(\textbf{x'})q(\textbf{x}{{,|,}}\textbf{x'})}{\pi(\textbf{x})q(\textbf{x'}{{,|,}}\textbf{x})}  \right)\ .$$
+$\alpha(\textbf{x'}{{,|,}}\textbf{x}) = \min\ \left(1,\frac{\pi(\textbf{x'})q(\textbf{x}{{,|,}}\textbf{x'})}{\pi(\textbf{x})q(\textbf{x'}{{,|,}}\textbf{x})}  \right)\ $
 If the proposal is rejected, the state remains at $\textbf{x}$.</p>
 
 <ol>
