@@ -107,15 +107,15 @@
 <p><strong>10.1</strong> Consider a robot whose operation is described by the following PDDL
 operators:</p>
 
-<p>$$
+<p>$
 Op({Go(x,y)},{At(Robot,x)},{\lnot At(Robot,x) \land At(Robot,y)})
-$$
-$$
+$
+$
 Op({Pick(o)},{At(Robot,x)\land At(o,x)},{\lnot At(o,x) \land Holding(o)})
-$$
-$$
+$
+$
 Op({Drop(o)},{At(Robot,x)\land Holding(o)},{At(o,x) \land \lnot Holding(o)}
-$$</p>
+$</p>
 
 <ol>
 <li><p>The operators allow the robot to hold more than one object. Show how
@@ -134,9 +134,9 @@ from Figure <a href="#/">airport-pddl-algorithm</a>, what are all the
 applicable concrete instances of ${Fly}(p,{from},{to})$ in the
 state described by</p>
 
-<p>$$
-At(P<em>1,JFK) \land At(P</em>2,SFO) \land Plane(P<em>1) \land Plane(P</em>2) \land Airport(JFK) \land Airport(SFO)?
-$$</p>
+<p>$
+At(P_1,JFK) \land At(P_2,SFO) \land Plane(P_1) \land Plane(P_2) \land Airport(JFK) \land Airport(SFO)?
+$</p>
 
 <p><strong>10.4</strong> The monkey-and-bananas problem is faced by a monkey in a laboratory with
 some bananas hanging out of reach from the ceiling. A box is available
@@ -198,13 +198,13 @@ of a box at the light switch’s location.</p></li>
 
 <p>Write PDDL sentences for Shakey’s six actions and the initial state from
 Figure <a href="#shakey-figure">shakey-figure</a>. Construct a plan for Shakey to
-get ${Box}{}<em>2$ into ${Room}{}</em>2$.</p>
+get $ {Box}{}_2$ into ${Room}{}_2 $ .</p>
 
-<p><center>
+<p>
 <b id="shakey-figure">Figure [shakey-figure]</b> Shakey's world. Shakey can move between landmarks within a room, can pass through the door between rooms, can climb climbable objects and push pushable objects, and can flip light switches.
-</center></p>
+</p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/shakey2.svg" alt="shakey-figure" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/shakey2.svg" alt="shakey-figure" style = "width: 100%;"/></p>
 
 <p><strong>10.6</strong> A finite Turing machine has a finite one-dimensional tape of cells, each
 cell containing one of a finite number of symbols. One cell has a read
@@ -232,8 +232,8 @@ The problem was considered anomalous because the noninterleaved planners
 of the early 1970s could not solve it. Write a definition of the problem
 and solve it, either by hand or with a planning program. A
 noninterleaved planner is a planner that, when given two subgoals
-$G<em>{1}$ and $G</em>{2}$, produces either a plan for $G<em>{1}$ concatenated
-with a plan for $G</em>{2}$, or vice versa. Can a noninterleaved planner
+$G_{1}$ and $G_{2}$, produces either a plan for $G_{1}$ concatenated
+with a plan for $G_{2}$, or vice versa. Can a noninterleaved planner
 solve this problem? How, or why not?</p>
 
 <p><strong>10.9</strong> Prove that backward search with PDDL problems is complete.</p>
@@ -254,10 +254,10 @@ actual cost of an optimal plan for achieving it.</p></li>
 
 <p><strong>10.12</strong> We saw that planning graphs can handle only propositional actions. What
 if we want to use planning graphs for a problem with variables in the
-goal, such as ${At}(P<em>{1}, x) 
-    \land {At}(P</em>{2}, x)$, where $x$ is assumed to be bound by an
+goal, such as $ {At}(P_{1}, x) 
+    \land {At}(P_{2}, x) $, where $x$ is assumed to be bound by an
 existential quantifier that ranges over a finite domain of locations?
-How could you encode such a problem to work with planning graphs?</p>
+How could you encode such a problem to work with planning graphs? </p>
 
 <p><strong>10.13</strong> The set-level heuristic (see page <a href="#/">set-level-page</a>) uses a planning graph
 to estimate the cost of achieving a conjunctive goal from the current
@@ -298,10 +298,10 @@ is executed in a state where its preconditions are not satisfied.</p></li>
 
 <li><p>Consider a plan $p$ that contains the actions required to achieve a
 goal but also includes illegal actions. Is it the case that
-$$
+$
 initial state \land successor-state axioms \land
 p {\models} goal ?
-$$</p></li>
+$</p></li>
 
 <li><p>With first-order successor-state axioms in situation calculus, is it
 possible to prove that a plan containing illegal actions will
@@ -337,13 +337,13 @@ of successor-state axioms.</p></li>
 <p><strong>10.18</strong> [disjunctive-satplan-exercise] In the {SATPlan} algorithm in
 Figure <a href="#/">satplan-agent-algorithm</a> (page <a href="#/">satplan-agent-algorithm</a>),
 each call to the satisfiability algorithm asserts a goal $g^T$, where
-$T$ ranges from 0 to $T<em>{{\rm max}}$. Suppose instead that the
+$T$ ranges from 0 to $T_{{\rm max}}$. Suppose instead that the
 satisfiability algorithm is called only once, with the goal
-$g^0 \lor g^1 \lor \cdots \lor g^{T</em>{{\rm max}}}$.</p>
+$g^0 \lor g^1 \lor \cdots \lor g^{T_{{\rm max}}}$.</p>
 
 <ol>
 <li><p>Will this always return a plan if one exists with length less than
-or equal to $T_{{\rm max}}$?</p></li>
+or equal to $ T_{{\rm max}} $?</p></li>
 
 <li><p>Does this approach introduce any new spurious “solutions”?</p></li>
 
