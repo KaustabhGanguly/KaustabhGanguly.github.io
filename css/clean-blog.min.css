@@ -22,9 +22,9 @@ footer{padding:100px 0 100px}footer .list-inline{margin:10;padding:0}footer .cop
 @media all and (min-width:450px){
 
 
-.row{body {
+body {
   background: #ebebeb url(https://f.cl.ly/items/1p2t2A0O1T0c0O1M1q1T/Untitled-1.png);
-  font-family: inherit;
+  font-family: helvetica;
 }
 
 .paper-stack {
@@ -64,11 +64,7 @@ footer{padding:100px 0 100px}footer .list-inline{margin:10;padding:0}footer .cop
   text-align: center;
   color: #333;
 }
-}
- .row.footer {
-        box-shadow: 0!important;
-        padding: 0;
-    }
+
 }
 
 @media all and (min-width:321px) and (max-width: 449px) {
