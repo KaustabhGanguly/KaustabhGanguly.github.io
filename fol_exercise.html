@@ -146,8 +146,8 @@ contains exactly one object.</p>
 contains exactly two objects.</p>
 
 <p><strong>8.6</strong> [fol-model-count-exercise] Consider a symbol vocabulary that contains
-$c$ constant symbols, $p<em>k$ predicate symbols of each arity $k$, and
-$f</em>k$ function symbols of each arity $k$, where $1\leq k\leq A$. Let the
+$c$ constant symbols, $p_k$ predicate symbols of each arity $k$, and
+$f_k$ function symbols of each arity $k$, where $1\leq k\leq A$. Let the
 domain size be fixed at $D$. For any given model, each predicate or
 function symbol is mapped onto a relation or function, respectively, of
 the same arity. You may assume that the functions in the model allow
@@ -324,11 +324,11 @@ valid but does not express the meaning of the English sentence.</p>
 <li><p>Everyone’s zip code within a state has the same first digit.</p>
 
 <ol>
-<li><p>${\forall,x,s,z<em>1\;\;} [{State}(s) \land {LivesIn}(x,s) \land {Zip}(x){{,=,}}z</em>1] {\:\;{\Rightarrow}\:\;}{}$\
-$[{\forall,y,z<em>2\;\;} {LivesIn}(y,s) \land {Zip}(y){{,=,}}z</em>2 {\:\;{\Rightarrow}\:\;}{Digit}(1,z<em>1) {{,=,}}{Digit}(1,z</em>2) ]$.</p></li>
+<li><p> $ { \forall,x,s,z_1\;\; } [{State}(s) \land {LivesIn}(x,s) \land {Zip}(x){{,=,}}z_1] {\:\;{\Rightarrow}\:\;}{} $\
+$ [{ \forall,y,z_2\;\; } {LivesIn}(y,s) \land {Zip}(y){{,=,}}z_2 {\:\;{ \Rightarrow }\:\;}{Digit}(1,z_1) {{,=,}}{Digit}(1,z_2) ]$.</p></li>
 
-<li><p>${\forall,x,s\;\;} [{State}(s) \land {LivesIn}(x,s) \land {\exists,z<em>1\;\;} {Zip}(x){{,=,}}z</em>1] {\:\;{\Rightarrow}\:\;}{}$\
-$ [{\forall,y,z<em>2\;\;} {LivesIn}(y,s) \land {Zip}(y){{,=,}}z</em>2 \land {Digit}(1,z<em>1) {{,=,}}{Digit}(1,z</em>2) ]$.</p></li>
+<li><p>${ \forall,x,s\;\;} [{State}(s) \land { LivesIn } (x,s) \land { \exists,z_1 \;\;} {Zip}(x){{,=,}} z_1 ] {\:\;{\Rightarrow}\:\;}{}$\
+$ [{\forall,y,z_2\;\;} {LivesIn}(y,s) \land {Zip}(y){{,=,}}z_2 \land {Digit}(1,z_1) {{,=,}}{Digit}(1,z_2 ) ]$.</p></li>
 
 <li><p>${\forall,x,y,s\;\;} {State}(s) \land {LivesIn}(x,s) \land {LivesIn}(y,s) {\:\;{\Rightarrow}\:\;}{Digit}(1,{Zip}(x){{,=,}}{Zip}(y))$.</p></li>
 
@@ -343,19 +343,19 @@ about logical sentences:</p>
 <li>Translate into <em>good, natural</em> English (no $x$s or $y$s!):</li>
 </ol>
 
-<p>$$
-{\forall,x,y,l\;\;} SpeaksLanguage(x, l) \land SpeaksLanguage(y, l)
+<p>$
+{ \forall ,x,y,l\;\; } SpeaksLanguage(x, l) \land SpeaksLanguage(y, l)
     \implies Understands(x, y) \land Understands(y,x).
-$$</p>
+$</p>
 
 <ol>
 <li>Explain why this sentence is entailed by the sentence</li>
 </ol>
 
-<p>$$
-{\forall,x,y,l\;\;} SpeaksLanguage(x, l) \land SpeaksLanguage(y, l)
-    \implies Understands(x, y).
-$$</p>
+<p>$
+{ \forall,x,y,l\;\; } SpeaksLanguage(x, l) \land SpeaksLanguage(y, l)
+    \implies Understands (x, y).
+$</p>
 
 <ol>
 <li><p>Translate into first-order logic the following sentences:</p>
@@ -377,7 +377,7 @@ $$</p>
 <li><p>Every existentially quantified sentence in first-order logic is true
 in any model that contains exactly one object.</p></li>
 
-<li><p>${\forall,x,y\;\;} x{{,=,}}y$is satisfiable.</p></li>
+<li><p> $ {\forall,x,y\;\;} x{{,=,}}y $is satisfiable.</p></li>
 </ol>
 
 <p><strong>8.15</strong> [Peano-completion-exercise] Rewrite the first two Peano axioms in
@@ -418,9 +418,9 @@ Using a suitable logical reasoning system, it all the sentences you have
 written down, and it who are Elizabeth’s grandchildren, Diana’s
 brothers-in-law, Zara’s great-grandparents, and Eugenie’s ancestors.</p>
 
-<p><center>
+<p>
 <b id="family1-figure">Figure [family1-figure]</b> A typical family tree. The symbol $\bowtie$ connects spouses and arrows point to children.
-</center></p>
+</p>
 
 <p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/family1.svg" alt="family1-figure" /></p>
 
@@ -429,13 +429,13 @@ your sentence follow from the Peano axioms? If so, explain why; if not,
 give a model in which the axioms are true and your sentence is false.</p>
 
 <p><strong>8.19</strong> Explain what is wrong with the following proposed definition of the set
-membership predicate ${{,\in,}}$</p>
+membership predicate ${{ ,\in, }}$</p>
 
 <p>$$
-{\forall,x,s\;\;} x \in {x|s}
+{ \forall,x,s\;\; } x \in {x|s}
 $$
 $$
-{\forall,x,s\;\;} x \in s \implies {\forall,y\;\;} x \in {y|s}
+{ \forall,x,s\;\; } x \in s \implies { \forall,y\;\; } x \in {y|s}
 $$</p>
 
 <p><strong>8.20</strong> [list-representation-exercise]Using the set axioms as examples, write
@@ -444,7 +444,7 @@ predicates mentioned in the chapter.</p>
 
 <p><strong>8.21</strong> [adjacency-exercise]Explain what is wrong with the following proposed
 definition of adjacent squares in the wumpus world:
-$${\forall,x,y\;\;} {Adjacent}([x,y], [x+1, y]) \land {Adjacent}([x,y], [x, y+1])\ .$$</p>
+${\forall,x,y\;\;} {Adjacent}([x,y], [x+1, y]) \land {Adjacent}([x,y], [x, y+1])\ $</p>
 
 <p><strong>8.22</strong> Write out the axioms required for reasoning about the wumpus’s location,
 using a constant symbol ${Wumpus}$ and a binary predicate
@@ -487,17 +487,17 @@ conjecture as a logical sentence.</p></li>
 
 <p><strong>8.25</strong> In Chapter <a href="#/">csp-chapter</a>, we used equality to indicate
 the relation between a variable and its value. For instance, we wrote
-${WA}{{,=,}}{red}$ to mean that Western Australia is colored
+$  {WA}{{,=,}}{red} $ to mean that Western Australia is colored
 red. Representing this in first-order logic, we must write more
-verbosely ${ColorOf}({WA}){{,=,}}{red}$. What incorrect
+verbosely $ {ColorOf}({WA}){{,=,}}{red} $ . What incorrect
 inference could be drawn if we wrote sentences such as
-${WA}{{,=,}}{red}$ directly as logical assertions?</p>
+$ {WA}{{,=,}}{red} $ directly as logical assertions?</p>
 
 <p><strong>8.26</strong> Write in first-order logic the assertion that every key and at least one
 of every pair of socks will eventually be lost forever, using only the
 following vocabulary: ${Key}(x)$, $x$ is a key; ${Sock}(x)$, $x$ is
 a sock; ${Pair}(x,y)$, $x$ and $y$ are a pair; ${Now}$, the current
-time; ${Before}(t<em>1,t</em>2)$, time $t<em>1$ comes before time $t</em>2$;
+time; ${Before}(t_1,t_2)$, time $t_1$ comes before time $t_2$;
 ${Lost}(x,t)$, object $x$ is lost at time $t$.</p>
 
 <p><strong>8.27</strong> For each of the following sentences in English, decide if the
@@ -507,13 +507,13 @@ error!)</p>
 
 <ol>
 <li><p>No two people have the same social security number.
-$$\lnot {\exists,x,y,n\;\;} {Person}(x) \land {Person}(y) {\:\;{\Rightarrow}\:\;}[{HasSS}#(x,n) \land {HasSS}#(y,n)].$$</p></li>
+$\lnot {\exists,x,y,n\;\;} {Person}(x) \land {Person}(y) {\:\;{ \Rightarrow }\:\;}[{HasSS}#(x,n) \land {HasSS}#(y,n)]. $</p></li>
 
 <li><p>John’s social security number is the same as Mary’s.
-$${\exists,n\;\;} {HasSS}#({John},n) \land {HasSS}#({Mary},n).$$</p></li>
+${\exists,n\;\;} {HasSS}#({John},n) \land {HasSS}#({Mary},n). $</p></li>
 
 <li><p>Everyone’s social security number has nine digits.
-$${\forall,x,n\;\;} {Person}(x) {\:\;{\Rightarrow}\:\;}[{HasSS}#(x,n) \land {Digits}(n,9)].$$</p></li>
+${\forall,x,n\;\;} {Person}(x) {\:\;{\Rightarrow}\:\;}[{HasSS}#(x,n) \land {Digits}(n,9)]. $ </p></li>
 
 <li><p>Rewrite each of the above (uncorrected) sentences using a function
 symbol ${SS}#$ instead of the predicate ${HasSS}#$.</p></li>
@@ -534,28 +534,28 @@ explain why not and correct it.</p>
 in Paris.</li>
 </ol>
 
-<p>$$
+<p>$
 \forall {x} [{Apt}(x) \land {In}(x,{London})]
 \implies \exists {y} ([{Apt}(y) \land {In}(y,{Paris})] \implies ({Rent}(x) &lt; {Rent}(y)))
-$$</p>
+$</p>
 
 <ol>
-<li>There is exactly one apartment in Paris with rent below \$1000.</li>
+<li>There is exactly one apartment in Paris with rent below 1000 dollars .</li>
 </ol>
 
-<p>$$
+<p>$
 \exists {x} {Apt}(x) \land {In}(x,{Paris}) \land \forall{y} [{Apt}(y) \land {In}(y,{Paris}) \land ({Rent}(y) &lt; {Dollars}(1000))] \implies (y = x)
-$$</p>
+$</p>
 
 <ol>
 <li>If an apartment is more expensive than all apartments in London, it
 must be in Moscow.</li>
 </ol>
 
-<p>$$
+<p>$
 \forall{x} {Apt}(x) \land [\forall{y} {Apt}(y) \land {In}(y,{London}) \land ({Rent}(x) > {Rent}(y))] \implies
 {In}(x,{Moscow}).
-$$</p>
+$</p>
 
 <p><strong>8.30</strong> Represent the following sentences in first-order logic, using a
 consistent vocabulary (which you must define):</p>
@@ -639,11 +639,11 @@ binary numbers. Then encode the description of the four-bit adder in
 Figure <a href="#adder-figure">4bit-adder-figure</a>, and pose the queries needed
 to verify that it is in fact correct.</p>
 
-<p><center>
+<p>
 <b id="adder-figure">Figure [adder-figure]</b> A four-bit adder. Each ${Ad}_i$ is a one-bit adder, as in figure <a href="#adder-figure">adder-figure</a> on page <a href="#/">adder-figure</a>
-</center></p>
+</p>
 
-<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/4bit-adder.svg" alt="adder-figure" /></p>
+<p><img src="http://nalinc.github.io/aima-exercises/Jupyter%20notebook/figures/4bit-adder.svg" alt="adder-figure" style = "width: 100%;" /></p>
 
 <p><strong>8.34</strong> The circuit representation in the chapter is more detailed than
 necessary if we care only about circuit functionality. A simpler
@@ -655,7 +655,7 @@ ${NOT}(0,1)$ and ${NOT}(1,0)$ are known. Compositions of gates are
 defined by conjunctions of gate predicates in which shared variables
 indicate direct connections. For example, a NAND circuit can be composed
 from ${AND}$s and ${NOT}$s:
-$${\forall,i<em>1,i</em>2,o<em>a,o\;\;} {AND}(i</em>1,i<em>2,o</em>a) \land {NOT}(o<em>a,o) {\:\;{\Rightarrow}\:\;}{NAND}(i</em>1,i_2,o)\ .$$
+${\forall,i_1,i_2,o_a,o\;\;} {AND}(i_1,i_2,o_a) \land {NOT}(o_a,o) {\:\;{\Rightarrow}\:\;}{NAND}(i_1,i_2,o)\ $
 Using this representation, define the one-bit adder in
 Figure <a href="#adder-figure">adder-figure</a> and the four-bit adder in
 Figure <a href="#adder-figure">4bit-adder-figure</a>, and explain what queries you
