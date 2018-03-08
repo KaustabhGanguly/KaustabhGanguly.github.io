@@ -107,92 +107,82 @@
 <p><strong>19.1</strong> [dbsig-exercise]Show, by translating into conjunctive normal form and
 applying resolution, that the conclusion drawn on page <a href="#/">dbsig-page</a>
 concerning Brazilians is sound.</p>
-
 <p><strong>19.2</strong> For each of the following determinations, write down the logical
 representation and explain why the determination is true (if it is):</p>
-
 <ol>
-<li><p>Design and denomination determine the mass of a coin.</p></li>
-
-<li><p>For a given program, input determines output.</p></li>
-
+<li><p>Design and denomination determine the mass of a coin.</p>
+</li>
+<li><p>For a given program, input determines output.</p>
+</li>
 <li><p>Climate, food intake, exercise, and metabolism determine weight gain
-and loss.</p></li>
-
+and loss.</p>
+</li>
 <li><p>Baldness is determined by the baldness (or lack thereof) of one’s
-maternal grandfather.</p></li>
+maternal grandfather.</p>
+</li>
 </ol>
-
 <p><strong>19.3</strong> For each of the following determinations, write down the logical
 representation and explain why the determination is true (if it is):</p>
-
 <ol>
-<li><p>Zip code determines the state (U.S.).</p></li>
-
-<li><p>Design and denomination determine the mass of a coin.</p></li>
-
+<li><p>Zip code determines the state (U.S.).</p>
+</li>
+<li><p>Design and denomination determine the mass of a coin.</p>
+</li>
 <li><p>Climate, food intake, exercise, and metabolism determine weight gain
-and loss.</p></li>
-
+and loss.</p>
+</li>
 <li><p>Baldness is determined by the baldness (or lack thereof) of one’s
-maternal grandfather.</p></li>
+maternal grandfather.</p>
+</li>
 </ol>
-
 <p><strong>19.4</strong> Would a probabilistic version of determinations be useful? Suggest a
 definition.</p>
-
-<p><strong>19.5</strong> [ir-step-exercise]Fill in the missing values for the clauses $C<em>1$ or
-$C</em>2$ (or both) in the following sets of clauses, given that $C$ is the
-resolvent of $C<em>1$ and $C</em>2$:</p>
-
+<p><strong>19.5</strong> [ir-step-exercise]Fill in the missing values for the clauses $C_1$ or
+$C_2$ (or both) in the following sets of clauses, given that $C$ is the
+resolvent of $C_1$ and $C_2$:</p>
 <ol>
 <li><p>$C = {True} {\:\;{\Rightarrow}\:\;}P(A,B)$,
-$C<em>1 = P(x,y) {\:\;{\Rightarrow}\:\;}Q(x,y)$, $C</em>2
-= ??$.</p></li>
-
-<li><p>$C = {True} {\:\;{\Rightarrow}\:\;}P(A,B)$, $C<em>1 = ??$,
-$C</em>2 = ??$.</p></li>
-
-<li><p>$C = P(x,y) {\:\;{\Rightarrow}\:\;}P(x,f(y))$, $C<em>1 = ??$,
-$C</em>2 = ??$.</p></li>
+$C_1 = P(x,y) {\:\;{\Rightarrow}\:\;}Q(x,y)$, $C_2
+= ??$.</p>
+</li>
+<li><p>$C = {True} {\:\;{\Rightarrow}\:\;}P(A,B)$, $C_1 = ??$,
+$C_2 = ??$.</p>
+</li>
+<li><p>$C = P(x,y) {\:\;{\Rightarrow}\:\;}P(x,f(y))$, $C_1 = ??$,
+$C_2 = ??$.</p>
+</li>
 </ol>
-
 <p>If there is more than one possible solution, provide one example of each
 different kind.</p>
-
 <p><strong>19.6</strong> [prolog-ir-exercise]Suppose one writes a logic program that carries
-out a resolution inference step. That is, let ${Resolve}(c<em>1,c</em>2,c)$
-succeed if $c$ is the result of resolving $c<em>1$ and $c</em>2$. Normally,
+out a resolution inference step. That is, let ${Resolve}(c_1,c_2,c)$
+succeed if $c$ is the result of resolving $c_1$ and $c_2$. Normally,
 ${Resolve}$ would be used as part of a theorem prover by calling it
-with $c<em>1$ and $c</em>2$ instantiated to particular clauses, thereby
+with $c_1$ and $c_2$ instantiated to particular clauses, thereby
 generating the resolvent $c$. Now suppose instead that we call it with
-$c$ instantiated and $c<em>1$ and $c</em>2$ uninstantiated. Will this succeed
+$c$ instantiated and $c_1$ and $c_2$ uninstantiated. Will this succeed
 in generating the appropriate results of an inverse resolution step?
 Would you need any special modifications to the logic programming system
 for this to work?</p>
-
 <p><strong>19.7</strong> [foil-literals-exercise]Suppose that is considering adding a literal
 to a clause using a binary predicate $P$ and that previous literals
 (including the head of the clause) contain five different variables.</p>
-
 <ol>
 <li><p>How many functionally different literals can be generated? Two
 literals are functionally identical if they differ only in the names
-of the <em>new</em> variables that they contain.</p></li>
-
+of the <em>new</em> variables that they contain.</p>
+</li>
 <li><p>Can you find a general formula for the number of different literals
 with a predicate of arity $r$ when there are $n$ variables
-previously used?</p></li>
-
+previously used?</p>
+</li>
 <li><p>Why does not allow literals that contain no previously used
-variables?</p></li>
+variables?</p>
+</li>
 </ol>
-
 <p><strong>19.8</strong> Using the data from the family tree in
 Figure <a href="#/">family2-figure</a>, or a subset thereof, apply the
 algorithm to learn a definition for the ${Ancestor}$ predicate.</p>
-                
-                
 		</div>
       </div>
     </div>
