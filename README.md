@@ -1,4 +1,4 @@
-# SIMPLE , MINIMALISTIC AND RESPONSIVE BOOK LIKE WEBSITE MADE WITH LOVE
+# SIMPLE , MINIMALISTIC AND RESPONSIVE BOOK LIKE WEBSITE . Every bit done from scratch , no templates , no site generators . Pure HTML/CSS/JS .
 
 ## Project under the supervision of Peter Norvig . I do not own any of the exercises . I just made the website .
 
