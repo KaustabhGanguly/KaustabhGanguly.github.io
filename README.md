@@ -23,6 +23,4 @@ The website is live at : https://kaustabhganguly.github.io
 
 # Please visit it from both mobile and a pc/mac to view the different styles suited for each other .
 
-Worked really hard for this .
-
-Thank you Peter for being such an inspiration and guide .
+Can do everything again if design is not good . No problems .
