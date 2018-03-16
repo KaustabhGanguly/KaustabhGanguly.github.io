@@ -19,7 +19,7 @@ What needs to be done next :
   ( only for professors) . **pending**
   
   
-The website is live at : https://kaustabhganguly.github.io/aima-exercise-2
+The website is live at : https://kaustabhganguly.github.io/aima-website-2
 
 # Please visit it from both mobile and a pc/mac to view the different styles suited for each other .
 
